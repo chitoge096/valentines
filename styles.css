@@ -62,16 +62,24 @@ h1 {
   transform: translate(calc(50vw - 100px), calc(-50vh + 100px));
 }
 
-/* GIF Styling */
+/* GIF Container - Ensure Transparent Background */
+.gif_container {
+  background: transparent; /* No background color */
+  padding: 0; /* No extra spacing */
+  border: none; /* Remove any borders */
+}
+
+/* GIF Styling - Remove Box-Like Effects */
 .gif_container img {
   max-width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 50%; /* Make the image circular */
   margin-top: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: none; /* Remove shadows */
   transition: transform 0.3s ease-in-out;
 }
 
 .gif_container img:hover {
   transform: scale(1.05);
 }
+
